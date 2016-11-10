@@ -1,4 +1,4 @@
-﻿-- Drop previous versions of the tables if they they exist, in reverse order of foreign keys.
+-- Drop previous versions of the tables if they they exist, in reverse order of foreign keys.
 DROP TABLE IF EXISTS Player CASCADE;
 DROP TABLE IF EXISTS PlayerGame CASCADE;
 DROP TABLE IF EXISTS Game CASCADE;
@@ -44,6 +44,7 @@ CREATE TABLE PlayerMatchUp (
 	);
 
 CREATE TABLE PlayerLocation (
+	playerLocationID integer PRIMARY KEY,
 	playerID integer REFERENCES Player(playerID),
 	gameID integer REFERENCES Game(gameID),
 	latitude float,
@@ -66,18 +67,18 @@ INSERT INTO Player VALUES (4, 'chris1', 'pwd4321', 'Christiaan', 'Hazlett', 'sop
 INSERT INTO Game VALUES (1, 'tournement1', true, 1, '2016-06-27 08:00:00', 3);
 
 
-INSERT INTO PlayerGame VALUES (1, 1, true);
-INSERT INTO PlayerGame VALUES (1, 2, true);
-INSERT INTO PlayerGame VALUES (1, 3, true);
-INSERT INTO PlayerGame VALUES (1, 4, false);
+INSERT INTO PlayerGame VALUES (1, 1, 1, true);
+INSERT INTO PlayerGame VALUES (2, 1, 2, true);
+INSERT INTO PlayerGame VALUES (3, 1, 3, true);
+INSERT INTO PlayerGame VALUES (4, 1, 4, false);
 
-INSERT INTO PlayerMatchUp VALUES (1, 1, 2, true);
-INSERT INTO PlayerMatchUp VALUES (1, 2, 3, true);
-INSERT INTO PlayerMatchUp VALUES (1, 3, 1, true);
+INSERT INTO PlayerMatchUp VALUES (1, 1, 1, 2, true);
+INSERT INTO PlayerMatchUp VALUES (2, 1, 2, 3, true);
+INSERT INTO PlayerMatchUp VALUES (3, 1, 3, 1, true);
 
-INSERT INTO PlayerLocation VALUES (1, 1, 42.9634, 85.6681);
-INSERT INTO PlayerLocation VALUES (2, 1, 43.1254, 84.9874);
-INSERT INTO PlayerLocation VALUES (3, 1, 41.6512, 87.2231);
+INSERT INTO PlayerLocation VALUES (1, 1, 1, 42.9634, 85.6681);
+INSERT INTO PlayerLocation VALUES (2, 2, 1, 43.1254, 84.9874);
+INSERT INTO PlayerLocation VALUES (3, 3, 1, 41.6512, 87.2231);
 
 -- get target of player1
 SELECT targetID FROM PlayerMatchUp
