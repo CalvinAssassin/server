@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS PlayerLocation CASCADE;
 
 
 CREATE TABLE Player (
-	playerID integer PRIMARY KEY,
+	playerID SERIAL PRIMARY KEY,
 	userName varchar(50) NOT NULL,
 	password varchar(50) NOT NULL,
 	firstName varchar(50),
@@ -59,10 +59,10 @@ GRANT SELECT ON PlayerGame TO PUBLIC;
 GRANT SELECT ON PlayerMatchUp TO PUBLIC;
 GRANT SELECT ON PlayerLocation TO PUBLIC;
 
-INSERT INTO Player VALUES (1, 'plb7', '123password', 'Paige', 'Brinks', 'senior', 'computer science');
-INSERT INTO Player VALUES (2, 'jjh35', 'abc123', 'Jesse', 'Hulse', 'senior', 'computer science');
-INSERT INTO Player VALUES (3, 'abc1', 'abcpass', 'First', 'Last', 'freshman', 'art');
-INSERT INTO Player VALUES (4, 'chris1', 'pwd4321', 'Christiaan', 'Hazlett', 'sophomore', 'history');
+INSERT INTO Player(UserName, password, firstName, lastName, year, major) VALUES('plb7', '123password', 'Paige', 'Brinks', 'senior', 'computer science');
+INSERT INTO Player(UserName, password, firstName, lastName, year, major) VALUES ('jjh35', 'abc123', 'Jesse', 'Hulse', 'senior', 'computer science');
+INSERT INTO Player(UserName, password, firstName, lastName, year, major) VALUES ('abc1', 'abcpass', 'First', 'Last', 'freshman', 'art');
+INSERT INTO Player(UserName, password, firstName, lastName, year, major) VALUES ('chris1', 'pwd4321', 'Christiaan', 'Hazlett', 'sophomore', 'history');
 
 INSERT INTO Game VALUES (1, 'tournement1', true, 1, '2016-06-27 08:00:00', 3);
 
