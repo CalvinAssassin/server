@@ -14,6 +14,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CalvinAssassinServer$CalvinAssassin.coverage" NAME="CalvinAssassin Coverage Results" MODIFIED="1479357484813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.calvin.cs262.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -26,29 +31,25 @@
       <file leaf-file-name="CalvinAssassin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+            <state relative-caret-position="576">
+              <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
               <folding>
-                <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-                <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-                <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-                <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-                <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-                <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-270">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding>
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#2568#2569#0" expanded="true" />
+                <element signature="e#2614#2615#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,40 +58,9 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="378">
               <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="e#694#695#0" expanded="false" />
-                <element signature="e#725#726#0" expanded="false" />
-                <element signature="e#759#760#0" expanded="false" />
-                <element signature="e#790#791#0" expanded="false" />
-                <element signature="e#824#825#0" expanded="false" />
-                <element signature="e#855#856#0" expanded="false" />
-                <element signature="e#885#886#0" expanded="false" />
-                <element signature="e#912#913#0" expanded="false" />
-                <element signature="e#947#948#0" expanded="false" />
-                <element signature="e#979#980#0" expanded="false" />
-                <element signature="e#1013#1014#0" expanded="false" />
-                <element signature="e#1044#1045#0" expanded="false" />
-                <element signature="e#1074#1075#0" expanded="false" />
-                <element signature="e#1101#1102#0" expanded="false" />
-                <element signature="e#1132#1133#0" expanded="false" />
-                <element signature="e#1160#1161#0" expanded="false" />
-                <element signature="e#1203#1204#0" expanded="false" />
-                <element signature="e#1240#1241#0" expanded="false" />
-                <element signature="e#1287#1288#0" expanded="false" />
-                <element signature="e#1327#1328#0" expanded="false" />
-                <element signature="e#1366#1367#0" expanded="false" />
-                <element signature="e#1398#1399#0" expanded="false" />
-                <element signature="e#1521#1522#0" expanded="false" />
-                <element signature="e#1563#1564#0" expanded="false" />
-                <element signature="e#1610#1611#0" expanded="false" />
-                <element signature="e#1650#1651#0" expanded="false" />
-                <element signature="e#1689#1690#0" expanded="false" />
-                <element signature="e#1721#1722#0" expanded="false" />
-                <element signature="e#1761#1762#0" expanded="false" />
-                <element signature="e#1795#1796#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +68,8 @@
       <file leaf-file-name="CreateGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java" />
       </list>
     </option>
   </component>
@@ -157,10 +128,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="1599" />
+    <option name="width" value="1602" />
+    <option name="height" value="901" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -187,6 +157,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,9 +206,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -637,6 +607,9 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -721,6 +694,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -838,19 +824,21 @@
       <workItem from="1479321283712" duration="1031000" />
       <workItem from="1479328387376" duration="1567000" />
       <workItem from="1479340702685" duration="1212000" />
+      <workItem from="1479356434169" duration="383000" />
+      <workItem from="1479357133602" duration="5052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37223000" />
+    <option name="totallyTimeSpent" value="42658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="false" />
+    <frame x="1599" y="0" width="1602" height="901" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -858,7 +846,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27715355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -903,26 +892,59 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2034">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -931,38 +953,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -979,26 +970,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1007,38 +979,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,26 +996,7 @@
         <state relative-caret-position="3927">
           <caret line="242" column="5" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1083,38 +1005,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,26 +1022,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1159,38 +1031,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,26 +1048,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1236,26 +1058,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1265,26 +1068,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1293,38 +1077,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,26 +1086,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1361,38 +1095,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,26 +1104,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1429,38 +1113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,26 +1122,7 @@
         <state relative-caret-position="405">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1497,38 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,76 +1139,39 @@
     <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="378">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1160#1161#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2614#2615#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+        <state relative-caret-position="576">
+          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
           <folding>
-            <marker date="1479263794406" expanded="true" signature="5127:5180" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5127:5181" ph="SELECT targe... PlayerMatchUp" />
-            <marker date="1479263794406" expanded="true" signature="5966:5986" ph="SELECT * FRO... Player" />
-            <marker date="1479263794406" expanded="true" signature="6672:6829" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6835" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6840" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6850" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6854" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6856" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6864" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6870" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6872" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6876" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6880" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6890" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6891" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6901" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="6672:6904" ph="INSERT INTO Player... " />
-            <marker date="1479263794406" expanded="true" signature="7644:7702" ph="SELECT playe... Player" />
-            <marker date="1479263794406" expanded="true" signature="8547:8592" ph="SELECT * FRO... PlayerLocation" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
