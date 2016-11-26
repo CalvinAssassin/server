@@ -7,6 +7,8 @@ import com.sun.net.httpserver.HttpServer;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.IOException;
 import java.sql.*;
 import java.util.*;
@@ -39,7 +41,7 @@ public class CalvinAssassin {
     // |_|   |_|  \___/|_| |_|_|\___| |_____/ \__|\__,_|_| |_|
 
 
-    // GET /profile/query?id=1
+    // GET /profile/{id}
     // Queries the database for information about the specified profile and
     // returns it as JSON.
     // @author: cdh24
@@ -58,54 +60,122 @@ public class CalvinAssassin {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "{err:\"Unable to get profile.\"}";
+        return "{\"err\":\"Unable to get profile.\"}";
     }
 
-//    // POST /profile/create
-//    // Retrieves data from the POST request and creates a new user in the database
-//    // @author: cdh24
-//    // @date: 11-16-16
-//    @POST
-//    @Path("/profile/create")
-//    @Produces("application/json")
-//    public String createProfile(@Context UriInfo info) {
-//        try {
-//            return new Gson().toJson(info.getQueryParameters().getFirst("id"));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-
-
-
-
-
-
-
-
-
-    // GET /game/{id}
-    // Queries the database for information about the specified game and
-    // returns it as JSON.
+    // POST /profile
+    // Adds a profile to the database with the information supplied.
     // @author: cdh24
-    // @date: 11-18-16
-    @GET
-    @Path("/game/{id}")
+    // @date: 11-20-16
+    @POST
+    @Consumes("application/json")
+    @Path("/profile")
     @Produces("application/json")
-    public String getGame(@PathParam("id") int id) {
-
-        // Create a new game object
-        Game game= new Game();
+    public String createProfile(String data) {
 
         try {
-            game.loadFromDataBase(id);
-            return game.getJSON();
+            // Create new object from json string
+            Gson gson = new Gson();
+            PlayerProfile player = gson.fromJson(data, PlayerProfile.class);
+
+            // Insert into DB and get new ID number
+            player.insertIntoDataBase();
+
+            // Send the profile back to the browser with the ID for the new user
+            return getProfile(player.ID);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "{err:\"Unable to get game.\"}";
+        return "{\"err\":\"Unable to create profile.\"}";
     }
+
+    // PUT /profile/{id}
+    // Updates a profile in the database with the information supplied.
+    // @author: cdh24
+    // @date: 11-20-16
+    @PUT
+    @Consumes("application/json")
+    @Path("/profile/{id}")
+    @Produces("application/json")
+    public String updateProfile(@PathParam("id") int id, String data) {
+
+        try {
+            // Create new object from json string
+            Gson gson = new Gson();
+            PlayerProfile player = gson.fromJson(data, PlayerProfile.class);
+
+            // Set the new player's ID to the one from the URL
+            player.ID = id;
+
+            // Update DB
+            player.saveToDataBase();
+
+            // Send the profile back to the browser the way it appears in the DB
+            return getProfile(player.ID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to update profile.\"}";
+    }
+
+    // DELETE /profile/{id}
+    // Updates a profile in the database with the information supplied.
+    // @author: cdh24
+    // @date: 11-20-16
+    @DELETE
+    @Consumes("application/json")
+    @Path("/profile/{id}")
+    @Produces("application/json")
+    public String deleteProfile(@PathParam("id") int id) {
+
+        try {
+            // Create player object
+            PlayerProfile player = new PlayerProfile();
+            player.ID = id;
+
+            // Update DB
+            player.deleteFromDataBase();
+
+            // Send the profile back to the browser the way it appears in the DB
+            return "{\"msg\":\"Deleted user from database.\"}";
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to delete profile.\"}";
+    }
+
+
+
+
+    //   _____                         _____ _          __  __
+    //  / ____|                       / ____| |        / _|/ _|
+    // | |  __  __ _ _ __ ___   ___  | (___ | |_ _   _| |_| |_
+    // | | |_ |/ _` | '_ ` _ \ / _ \  \___ \| __| | | |  _|  _|
+    // | |__| | (_| | | | | | |  __/  ____) | |_| |_| | | | |
+    //  \_____|\__,_|_| |_| |_|\___| |_____/ \__|\__,_|_| |_|
+
+
+//    // GET /game/{id}
+//    // Queries the database for information about the specified game and
+//    // returns it as JSON.
+//    // @author: cdh24
+//    // @date: 11-20-16
+//    @GET
+//    @Path("/game/{id}")
+//    @Produces("application/json")
+//    public String getGame(@PathParam("id") int id) {
+//
+//        // Create a new profile object
+//        Game game = new Game();
+//
+//        try {
+//            game.loadFromDataBase(id);
+//            return game.getJSON();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return "{\"err\":\"Unable to get game`.\"}";
+//    }
 
 
 
@@ -124,17 +194,17 @@ public class CalvinAssassin {
         System.out.println("Web clients should visit: http://localhost:9998/api");
         System.out.println("Android emulators should visit: http://LOCAL_IP_ADDRESS:9998/api");
 
-        Game test = new Game();
-        test.ID = 1;
-        try {
-            test.getPlayers();
-            for (PlayerProfile e : test.players) {
-                System.out.println(e.getJSON());
-            }
-        }
-        catch (Exception e) {
-            throw(e);
-        }
+//        Game test = new Game();
+//        test.ID = 1;
+//        try {
+//            test.getPlayers();
+//            for (PlayerProfile e : test.players) {
+//                System.out.println(e.getJSON());
+//            }
+//        }
+//        catch (Exception e) {
+//            throw(e);
+//        }
 
         System.out.println("Hit return to stop...");
         //noinspection ResultOfMethodCallIgnored
