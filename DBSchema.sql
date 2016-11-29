@@ -18,7 +18,7 @@ CREATE TABLE Player (
 
 CREATE TABLE Game (
 	gameID SERIAL PRIMARY KEY,
-	name varchar(50),
+	gameName varchar(50),
 	inPlay boolean,
 	creatorID integer REFERENCES Player(playerID),
 	startDate date,
@@ -26,7 +26,8 @@ CREATE TABLE Game (
 	currentRound integer
 	);
 --
---INSERT INTO Game(name, inPlay, creatorID, startDate, endDate, currentRound) VALUES("Cool Game", TRUE, 2, '2016-11-20', '2016-11-27');
+INSERT INTO Player(playerID, firstName, lastName, residence, major) VALUES(100, 'Joe', 'Smith', 'NVW', 'computer science');
+INSERT INTO Game(gameName, inPlay, creatorID, startDate, endDate) VALUES('Cool Game', TRUE, 100, '2016-11-20', '2016-11-27');
 --
 -- CREATE TABLE PlayerGame (
 -- 	playerGameID integer PRIMARY KEY,
@@ -60,7 +61,6 @@ CREATE TABLE Game (
 -- GRANT SELECT ON PlayerMatchUp TO PUBLIC;
 -- GRANT SELECT ON PlayerLocation TO PUBLIC;
 --
- INSERT INTO Player(firstName, lastName, residence, major) VALUES('Joe', 'Smith', 'NVW', 'computer science');
 -- -- INSERT INTO Player VALUES ('Jesse', 'Hulse', 'SE', 'computer science');
 -- -- INSERT INTO Player VALUES ('First', 'Last', 'RVD', 'art');
 -- -- INSERT INTO Player VALUES ('Christiaan', 'Hazlett', 'KHvR', 'history');

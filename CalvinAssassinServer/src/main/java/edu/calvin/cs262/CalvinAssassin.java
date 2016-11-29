@@ -155,11 +155,32 @@ public class CalvinAssassin {
     //  \_____|\__,_|_| |_| |_|\___| |_____/ \__|\__,_|_| |_|
 
 
-//    // GET /game/{id}
-//    // Queries the database for information about the specified game and
-//    // returns it as JSON.
-//    // @author: cdh24
-//    // @date: 11-20-16
+    // GET /game/{id}
+    // Queries the database for information about the specified game and
+    // returns it as JSON.
+    // @author: cdh24
+    // @date: 11-20-16
+    @GET
+    @Path("/game/{id}")
+    @Produces("application/json")
+    public String getGame(@PathParam("id") int id) {
+
+        // Create a new profile object
+        Game game = new Game();
+
+        try {
+            game.loadFromDataBase(id);
+            return game.getJSON();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to get game`.\"}";
+    }
+
+    // GET /game/{id}/players
+    // Queries the database for the players associated with the game
+    // @author: cdh24
+    // @date: 11-20-16
 //    @GET
 //    @Path("/game/{id}")
 //    @Produces("application/json")
@@ -187,12 +208,12 @@ public class CalvinAssassin {
      * @throws IOException
      */
     public static void main(String[] args) throws Exception {
-        HttpServer server = HttpServerFactory.create("http://localhost:9998/");
+        HttpServer server = HttpServerFactory.create("http://localhost:8082/");
         server.start();
 
         System.out.println("Server running...");
-        System.out.println("Web clients should visit: http://localhost:9998/api");
-        System.out.println("Android emulators should visit: http://LOCAL_IP_ADDRESS:9998/api");
+        System.out.println("Web clients should visit: http://localhost:8082/api");
+        System.out.println("Android emulators should visit: http://LOCAL_IP_ADDRESS:8082/api");
 
 //        Game test = new Game();
 //        test.ID = 1;
