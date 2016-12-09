@@ -17,30 +17,26 @@ public class Game {
     public Integer                  ID;
     public String                   gameName;
     public Boolean                  inPlay;
-    public Integer                  creatorID;
     public String                   startDate;
-    public String                   endDate;
     public ArrayList<PlayerProfile> players = new ArrayList<PlayerProfile>();
 
 
     // Default constructor
     public Game() {
-        this(null, null, null, null, null);
+        this(null, null, null);
     }
 
     // Parametrized constructor without ID number (eg. for creating a game object in the server)
-    public Game(String gameName, Boolean inPlay, Integer creatorID, String startDate, String endDate) {
-        this(null, gameName, inPlay, creatorID, startDate, endDate);
+    public Game(String gameName, Boolean inPlay, String startDate) {
+        this(null, gameName, inPlay, startDate);
     }
 
     // Full value constructor
-    public Game(Integer ID, String gameName, Boolean inPlay, Integer creatorID, String startDate, String endDate) {
+    public Game(Integer ID, String gameName, Boolean inPlay, String startDate) {
         this.ID = ID;
         this.gameName = gameName;
         this.inPlay = inPlay;
-        this.creatorID = creatorID;
         this.startDate = startDate;
-        this.endDate = endDate;
     }
 
     // This method is for convenience--it sets the ID, and the loads data from the DB
@@ -72,9 +68,7 @@ public class Game {
             ID              = rs.getInt(1);
             gameName        = rs.getString(2);
             inPlay          = rs.getBoolean(3);
-            creatorID       = rs.getInt(4);
-            startDate       = rs.getString(5);
-            endDate         = rs.getString(6);
+            startDate       = rs.getString(4);
         }
         catch (SQLException e) {
             throw (e);
@@ -103,16 +97,19 @@ public class Game {
             statement = connection.createStatement();
             rs = statement.executeQuery(this.generateQueryString("getPlayers"));
 
-            System.out.println("What the?");
-
             while(rs.next()) {
                 // Set the instance variables to the returned values
                 PlayerProfile curPlayer = new PlayerProfile(
                         rs.getInt(1),
                         rs.getString(2),
                         rs.getString(3),
-                        null,
-                        rs.getString(4)
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getFloat(6),
+                        rs.getFloat(7),
+                        rs.getString(8),
+                        rs.getInt(9),
+                        rs.getBoolean(10)
                 );
                 this.players.add(curPlayer);
             }
@@ -152,7 +149,8 @@ public class Game {
                 // return an SQL query here
                 break;
             case "getPlayers":
-                return ("SELECT Player.playerID, firstName, lastName, major FROM Player, PlayerGame, Game WHERE Player.playerID = PlayerGame.playerID AND Game.gameID = Game.gameID AND Game.gameID = " + Integer.toString(this.ID));
+                return ("SELECT playerID, firstName, lastName, residence, major, latitude, longitude, locUpdateTime, " +
+                        "gameID, alive FROM Player WHERE Player.gameID = " + Integer.toString(this.ID));
             default:
                 return "";
         }

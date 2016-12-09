@@ -165,37 +165,39 @@ public class CalvinAssassin {
     @Produces("application/json")
     public String getGame(@PathParam("id") int id) {
 
-        // Create a new profile object
+        // Create a new game object
         Game game = new Game();
 
         try {
             game.loadFromDataBase(id);
+            game.getPlayers();
             return game.getJSON();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "{\"err\":\"Unable to get game`.\"}";
+        return "{\"err\":\"Unable to get game.\"}";
     }
 
-    // GET /game/{id}/players
-    // Queries the database for the players associated with the game
-    // @author: cdh24
-    // @date: 11-20-16
+//    // GET /game/{id}/players
+//    // Queries the database for the players associated with the game
+//    // @author: cdh24
+//    // @date: 11-20-16
 //    @GET
-//    @Path("/game/{id}")
+//    @Path("/game/{id}/players")
 //    @Produces("application/json")
-//    public String getGame(@PathParam("id") int id) {
+//    public String getPlayersInGame(@PathParam("id") int id) {
 //
 //        // Create a new profile object
 //        Game game = new Game();
 //
 //        try {
 //            game.loadFromDataBase(id);
+//            game.getPlayers();
 //            return game.getJSON();
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
-//        return "{\"err\":\"Unable to get game`.\"}";
+//        return "{\"err\":\"Unable to get game.\"}";
 //    }
 
 

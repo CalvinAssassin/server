@@ -17,25 +17,37 @@ public class PlayerProfile {
     public String lastName;
     public String residence;
     public String major;
+    public Float latitude;
+    public Float longitude;
+    public String locUpdateTime;
+    public Integer currentGameID;
+    public Boolean isAlive;
 
 
     // Default constructor
     public PlayerProfile() {
-        this("", "", "", "");
+        this("", "", "", "", 0.0f, 0.0f, "", null, false);
     }
 
     // Parametrized constructor without ID number (eg. for creating a player in the server)
-    public PlayerProfile(String firstName, String lastName, String residence, String major) {
-        this(null, firstName, lastName, residence, major);
+    public PlayerProfile(String firstName, String lastName, String residence, String major, Float latitude,
+                         Float longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
+        this(null, firstName, lastName, residence, major, latitude, longitude, locUpdateTime, currentGameID, isAlive);
     }
 
     // Full value constructor
-    public PlayerProfile(Integer ID, String firstName, String lastName, String residence, String major) {
+    public PlayerProfile(Integer ID, String firstName, String lastName, String residence, String major, Float latitude,
+                         Float longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.residence = residence;
         this.major = major;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.locUpdateTime = locUpdateTime;
+        this.currentGameID = currentGameID;
+        this.isAlive = isAlive;
     }
 
     // This method is for convenience--it sets the ID, and the loads data from the DB
@@ -69,6 +81,11 @@ public class PlayerProfile {
             lastName        = rs.getString(3);
             residence       = rs.getString(4);
             major           = rs.getString(5);
+            latitude        = rs.getFloat(6);
+            longitude       = rs.getFloat(7);
+            locUpdateTime   = rs.getString(8);
+            currentGameID   = rs.getInt(9);
+            isAlive         = rs.getBoolean(10);
         }
         catch (SQLException e) {
             throw (e);
@@ -195,12 +212,34 @@ public class PlayerProfile {
 
         switch (queryType) {
             case "read":
-                return ("SELECT * FROM Player WHERE Player.playerID = " + Integer.toString(this.ID));
+                return ("SELECT playerID, firstName, lastName, residence, major, latitude, longitude, locUpdateTime, " +
+                        "gameID, alive FROM Player WHERE Player.playerID = " + Integer.toString(this.ID));
             case "insert":
-                return ("INSERT INTO Player(firstName, lastName, residence, major) VALUES('"+ firstName +"', '"+ lastName +"', '"+ residence +"', '"+ major
-                         +"') RETURNING playerID;");
+                return ("INSERT INTO Player(playerID, firstName, lastName, residence, major, latitude, longitude, " +
+                        "locUpdateTime, gameID, alive) VALUES('"+
+                        firstName +"', '"+
+                        lastName +"', '"+
+                        residence +"', '"+
+                        major+"', '"+
+                        latitude+"', '"+
+                        longitude+"', '"+
+                        locUpdateTime+"', '"+
+                        currentGameID+"', '"+
+                        isAlive+"', '"+
+                        "') RETURNING playerID;"
+                );
             case "update":
-                return ("UPDATE Player SET firstName='"+ firstName +"', lastName='"+ lastName +"', residence='"+ residence +"', major='"+ major +"' WHERE player.playerID = "+ Integer.toString(this.ID) +" RETURNING playerID;");
+                return ("UPDATE Player SET" +
+                        "firstName='"+ firstName +
+                        "', lastName='"+ lastName +
+                        "', residence='"+ residence +
+                        "', major='"+ major +
+                        "', latitude='"+ latitude +
+                        "', longitude='"+ longitude +
+                        "', locUpdateTime='"+ locUpdateTime +
+                        "', gameID='"+ currentGameID +
+                        "', alive='"+ isAlive +
+                        "' WHERE player.playerID = "+ Integer.toString(this.ID) + " RETURNING playerID;");
             case "delete":
                 return ("DELETE FROM Player WHERE playerID = " + Integer.toString(this.ID) + " RETURNING 1;");
             default:
