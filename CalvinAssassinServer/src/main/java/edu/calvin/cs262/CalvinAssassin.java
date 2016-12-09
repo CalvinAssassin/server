@@ -3,23 +3,22 @@ package edu.calvin.cs262;
 import com.google.gson.Gson;
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.net.httpserver.HttpServer;
-
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.UriInfo;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+//import javax.ws.rs.core.Context;
+//import javax.ws.rs.core.UriInfo;
+//import javax.xml.bind.annotation.XmlElement;
+//import javax.xml.bind.annotation.XmlRootElement;
+//import java.sql.*;
+//import java.util.*;
 import java.io.IOException;
-import java.sql.*;
-import java.util.*;
 
 /**
  * This module implements the server for the Calvin-Assassin game.
  * The server requires Java 1.7 (not 1.8).
  *
  *
- * @author The B Team
- * @version v0.0
+ * @author cdh24, The B Team
+ * @version v -9000.1
 
  */
 @Path("/api")
@@ -45,7 +44,6 @@ public class CalvinAssassin {
     // Queries the database for information about the specified profile and
     // returns it as JSON.
     // @author: cdh24
-    // @date: 11-16-16
     @GET
     @Path("/profile/{id}")
     @Produces("application/json")
@@ -66,7 +64,6 @@ public class CalvinAssassin {
     // POST /profile
     // Adds a profile to the database with the information supplied.
     // @author: cdh24
-    // @date: 11-20-16
     @POST
     @Consumes("application/json")
     @Path("/profile")
@@ -92,7 +89,6 @@ public class CalvinAssassin {
     // PUT /profile/{id}
     // Updates a profile in the database with the information supplied.
     // @author: cdh24
-    // @date: 11-20-16
     @PUT
     @Consumes("application/json")
     @Path("/profile/{id}")
@@ -119,9 +115,8 @@ public class CalvinAssassin {
     }
 
     // DELETE /profile/{id}
-    // Updates a profile in the database with the information supplied.
+    // Deletes a profile from the database
     // @author: cdh24
-    // @date: 11-20-16
     @DELETE
     @Consumes("application/json")
     @Path("/profile/{id}")
@@ -133,10 +128,10 @@ public class CalvinAssassin {
             PlayerProfile player = new PlayerProfile();
             player.ID = id;
 
-            // Update DB
+            // Delete from DB
             player.deleteFromDataBase();
 
-            // Send the profile back to the browser the way it appears in the DB
+            // Send a message back to the user
             return "{\"msg\":\"Deleted user from database.\"}";
         } catch (Exception e) {
             e.printStackTrace();
@@ -159,7 +154,6 @@ public class CalvinAssassin {
     // Queries the database for information about the specified game and
     // returns it as JSON.
     // @author: cdh24
-    // @date: 11-20-16
     @GET
     @Path("/game/{id}")
     @Produces("application/json")
@@ -178,10 +172,96 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to get game.\"}";
     }
 
+
+    // POST /game
+    // Adds a new game object to the database and sends the data back to the browser
+    // @author: cdh24
+    @POST
+    @Consumes("application/json")
+    @Path("/game")
+    @Produces("application/json")
+    public String createGame(String data) {
+
+        try {
+            // Create a new game object
+            Gson gson = new Gson();
+            Game game = gson.fromJson(data, Game.class);
+
+            // Insert into DB and get new ID number
+            game.insertIntoDataBase();
+
+            // Send the profile back to the browser with the ID for the new user
+            return getGame(game.ID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to create game.\"}";
+    }
+
+
+    // PUT /game/{id}
+    // Updates a game in the database with the information supplied.
+    // @author: cdh24
+    @PUT
+    @Consumes("application/json")
+    @Path("/game/{id}")
+    @Produces("application/json")
+    public String updateGame(@PathParam("id") int id, String data) {
+
+        try {
+            // Create new object from json string
+            Gson gson = new Gson();
+            Game game = gson.fromJson(data, Game.class);
+
+            // Set the new game's ID to the one from the URL
+            game.ID = id;
+
+            // Update DB
+            game.saveToDataBase();
+
+            // Send the profile back to the browser the way it appears in the DB
+            return getGame(game.ID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to update game.\"}";
+    }
+
+
+    // DELETE /game/{id}
+    // Deletes the game from the DB
+    // @author: cdh24
+    @DELETE
+    @Consumes("application/json")
+    @Path("/game/{id}")
+    @Produces("application/json")
+    public String deleteGame(@PathParam("id") int id) {
+
+        try {
+            // Create game object
+            Game game= new Game();
+            game.ID = id;
+
+            // Update DB
+            game.deleteFromDataBase();
+
+            // Send a message back to the user informing of the delete
+            return "{\"msg\":\"Deleted game from database.\"}";
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to delete game.\"}";
+    }
+
+
+
+
+
+
+
 //    // GET /game/{id}/players
 //    // Queries the database for the players associated with the game
 //    // @author: cdh24
-//    // @date: 11-20-16
 //    @GET
 //    @Path("/game/{id}/players")
 //    @Produces("application/json")
