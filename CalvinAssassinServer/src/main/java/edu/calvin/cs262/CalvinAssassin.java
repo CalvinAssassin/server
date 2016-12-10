@@ -68,7 +68,7 @@ public class CalvinAssassin {
     @Consumes("application/json")
     @Path("/profile")
     @Produces("application/json")
-    public String createProfile(String data) {
+    public String createProfile(String data) throws Exception {
 
         try {
             // Create new object from json string
@@ -81,9 +81,10 @@ public class CalvinAssassin {
             // Send the profile back to the browser with the ID for the new user
             return getProfile(player.ID);
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            throw(e);
         }
-        return "{\"err\":\"Unable to create profile.\"}";
+        //return "{\"err\":\"Unable to create profile.\"}";
     }
 
     // PUT /profile/{id}

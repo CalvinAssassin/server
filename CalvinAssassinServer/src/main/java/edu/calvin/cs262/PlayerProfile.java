@@ -215,7 +215,7 @@ public class PlayerProfile {
                 return ("SELECT playerID, firstName, lastName, residence, major, latitude, longitude, locUpdateTime, " +
                         "gameID, alive FROM Player WHERE Player.playerID = " + Integer.toString(this.ID));
             case "insert":
-                return ("INSERT INTO Player(playerID, firstName, lastName, residence, major, latitude, longitude, " +
+                return ("INSERT INTO Player(firstName, lastName, residence, major, latitude, longitude, " +
                         "locUpdateTime, gameID, alive) VALUES('"+
                         firstName +"', '"+
                         lastName +"', '"+
@@ -225,20 +225,20 @@ public class PlayerProfile {
                         longitude+"', '"+
                         locUpdateTime+"', '"+
                         currentGameID+"', '"+
-                        isAlive+"', '"+
+                        isAlive+
                         "') RETURNING playerID;"
                 );
             case "update":
                 return ("UPDATE Player SET" +
-                        "firstName='"+ firstName +
-                        "', lastName='"+ lastName +
-                        "', residence='"+ residence +
-                        "', major='"+ major +
-                        "', latitude='"+ latitude +
-                        "', longitude='"+ longitude +
-                        "', locUpdateTime='"+ locUpdateTime +
-                        "', gameID='"+ currentGameID +
-                        "', alive='"+ isAlive +
+                        " firstName ='"+ firstName +
+                        "', lastName ='"+ lastName +
+                        "', residence ='"+ residence +
+                        "', major ='"+ major +
+                        "', latitude ='"+ latitude +
+                        "', longitude ='"+ longitude +
+                        "', locUpdateTime ='"+ locUpdateTime +
+                        "', gameID ='"+ currentGameID +
+                        "', alive ='"+ isAlive +
                         "' WHERE player.playerID = "+ Integer.toString(this.ID) + " RETURNING playerID;");
             case "delete":
                 return ("DELETE FROM Player WHERE playerID = " + Integer.toString(this.ID) + " RETURNING 1;");
