@@ -22,6 +22,7 @@ public class PlayerProfile {
     public String locUpdateTime;
     public Integer currentGameID;
     public Boolean isAlive;
+    public PlayerTargetInfo targetInfo;
 
 
     // Default constructor
@@ -202,6 +203,65 @@ public class PlayerProfile {
         }
     }
 
+    // This class gets information from the database about the player's target
+    public class PlayerTargetInfo {
+        public Integer matchID;
+        public Integer gameID;
+        public Integer playerID;
+        public Integer targetID;
+        public String targetStartTime;
+        public String targetTimeoutTime;
+        public String targetTimeLeft;
+    }
+
+    // This method loads the target's information from the DB into a targetInfo object
+    public void getTargetInformationFromDatabase() throws Exception {
+        // Create a new targetInformation object
+        targetInfo = new PlayerTargetInfo();
+
+        // Create connection to the database
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet rs = null;
+
+
+        // Try connecting and retrieving data
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
+            statement = connection.createStatement();
+            rs = statement.executeQuery(this.generateQueryString("readTargetInfo"));
+            rs.next();
+
+            // Set the instance variables for the target info object to the returned values
+//            targetInfo.matchID               = rs.getInt(1);
+            targetInfo.gameID                = rs.getInt(2);
+            targetInfo.playerID              = rs.getInt(3);
+            targetInfo.targetID              = rs.getInt(4);
+            targetInfo.targetStartTime       = rs.getString(5);
+            targetInfo.targetTimeoutTime     = rs.getString(6);
+            targetInfo.targetTimeLeft        = "10001";
+
+        }
+        catch (SQLException e) {
+            throw (e);
+        }
+        catch (ClassNotFoundException e) {
+            throw (e);
+        }
+        finally {
+            // Close all residual connection stuff
+            rs.close();
+            statement.close();
+            connection.close();
+        }
+    }
+
+    // This method outputs the JSON formatted target information object
+    public String getTargetJSON() {
+        return new Gson().toJson(this.targetInfo);
+    }
+
     // Output a JSON-formatted representation of this class
     public String getJSON() {
         return new Gson().toJson(this);
@@ -242,6 +302,12 @@ public class PlayerProfile {
                         "' WHERE player.playerID = "+ Integer.toString(this.ID) + " RETURNING playerID;");
             case "delete":
                 return ("DELETE FROM Player WHERE playerID = " + Integer.toString(this.ID) + " RETURNING 1;");
+            case "readTargetInfo":
+                return ("SELECT matchID, gameID, playerID, targetID, targetStartTime, targetTimeoutTime " +
+                        "FROM TargetMatches WHERE " +
+                        "TargetMatches.playerID = " + Integer.toString(ID) + " AND " +
+                        "TargetMatches.gameID = " + Integer.toString(currentGameID) + " " +
+                        "LIMIT 1;");
             default:
                 return "";
         }

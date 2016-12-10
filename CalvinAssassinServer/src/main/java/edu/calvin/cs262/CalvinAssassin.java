@@ -61,6 +61,27 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to get profile.\"}";
     }
 
+    // GET /profile/{id}/target
+    // Queries the database for information about the target of the given person, and returns it via JSON
+    // @author: cdh24
+    @GET
+    @Path("/profile/{id}/target")
+    @Produces("application/json")
+    public String getPlayersTarget(@PathParam("id") int id) {
+
+        // Create a new profile object
+        PlayerProfile player = new PlayerProfile();
+
+        try {
+            player.loadFromDataBase(id);
+            player.getTargetInformationFromDatabase();
+            return player.getTargetJSON();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "{\"err\":\"Unable to get target information for player.\"}";
+    }
+
     // POST /profile
     // Adds a profile to the database with the information supplied.
     // @author: cdh24
