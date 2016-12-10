@@ -52,8 +52,8 @@
       <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="242" column="49" selection-start-line="242" selection-start-column="49" selection-end-line="242" selection-end-column="49" />
+            <state relative-caret-position="1077">
+              <caret line="242" column="46" selection-start-line="242" selection-start-column="46" selection-end-line="242" selection-end-column="46" />
               <folding>
                 <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
@@ -972,12 +972,12 @@
       <workItem from="1480885189735" duration="1054000" />
       <workItem from="1481218308705" duration="2345000" />
       <workItem from="1481243787061" duration="5637000" />
-      <workItem from="1481389918881" duration="5247000" />
+      <workItem from="1481389918881" duration="5683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87054000" />
+    <option name="totallyTimeSpent" value="87490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1542,8 +1542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="242" column="49" selection-start-line="242" selection-start-column="49" selection-end-line="242" selection-end-column="49" />
+        <state relative-caret-position="1077">
+          <caret line="242" column="46" selection-start-line="242" selection-start-column="46" selection-end-line="242" selection-end-column="46" />
           <folding>
             <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
             <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
