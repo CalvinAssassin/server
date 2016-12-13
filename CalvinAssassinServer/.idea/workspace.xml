@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f552c0c0-9d8b-45cc-bdd5-a5a953bb89cd" name="Default" comment="" />
+    <list default="true" id="f552c0c0-9d8b-45cc-bdd5-a5a953bb89cd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DBSchema.sql" afterPath="$PROJECT_DIR$/../DBSchema.sql" />
+    </list>
     <ignored path="Lab09.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CalvinAssassin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CalvinAssassin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+            <state relative-caret-position="435">
+              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
               <folding>
                 <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
@@ -49,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1077">
-              <caret line="242" column="46" selection-start-line="242" selection-start-column="46" selection-end-line="242" selection-end-column="46" />
+            <state relative-caret-position="975">
+              <caret line="306" column="43" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
               <folding>
                 <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
@@ -62,7 +64,7 @@
                 <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-                <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+                <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -71,8 +73,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+            <state relative-caret-position="810">
+              <caret line="239" column="56" selection-start-line="239" selection-start-column="56" selection-end-line="239" selection-end-column="56" />
               <folding>
                 <element signature="method#Game#2;class#Game#0" expanded="false" />
                 <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
@@ -81,7 +83,8 @@
                 <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-                <element signature="method#generateQueryString#0;class#Game#0" expanded="false" />
+                <element signature="e#7955#7956#0" expanded="true" />
+                <element signature="e#8001#8002#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,8 +148,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -315,6 +318,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,9 +367,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -972,15 +975,16 @@
       <workItem from="1480885189735" duration="1054000" />
       <workItem from="1481218308705" duration="2345000" />
       <workItem from="1481243787061" duration="5637000" />
-      <workItem from="1481389918881" duration="5683000" />
+      <workItem from="1481389918881" duration="6395000" />
+      <workItem from="1481603762933" duration="513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87490000" />
+    <option name="totallyTimeSpent" value="88715000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -992,12 +996,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24150059" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24111015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1074,7 +1078,7 @@
             <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1091,7 +1095,8 @@
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#Game#0" expanded="false" />
+            <element signature="e#7955#7956#0" expanded="true" />
+            <element signature="e#8001#8002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1127,7 +1132,7 @@
             <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1144,7 +1149,8 @@
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#Game#0" expanded="false" />
+            <element signature="e#7955#7956#0" expanded="true" />
+            <element signature="e#8001#8002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,7 +1186,7 @@
             <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1197,7 +1203,8 @@
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#Game#0" expanded="false" />
+            <element signature="e#7955#7956#0" expanded="true" />
+            <element signature="e#8001#8002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1233,7 +1240,7 @@
             <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1496,10 +1503,28 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerTargetInformation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="306" column="43" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
+          <folding>
+            <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#loadFromDataBase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#loadFromDataBase#1;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        <state relative-caret-position="810">
+          <caret line="239" column="56" selection-start-line="239" selection-start-column="56" selection-end-line="239" selection-end-column="56" />
           <folding>
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
@@ -1508,23 +1533,16 @@
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#Game#0" expanded="false" />
+            <element signature="e#7955#7956#0" expanded="true" />
+            <element signature="e#8001#8002#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerTargetInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" selection-start-line="8" selection-start-column="3" selection-end-line="9" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="435">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
@@ -1536,23 +1554,6 @@
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1077">
-          <caret line="242" column="46" selection-start-line="242" selection-start-column="46" selection-end-line="242" selection-end-column="46" />
-          <folding>
-            <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#loadFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#loadFromDataBase#1;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#insertIntoDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>

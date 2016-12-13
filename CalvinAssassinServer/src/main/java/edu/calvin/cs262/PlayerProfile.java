@@ -282,8 +282,7 @@ public class PlayerProfile {
                         residence +"', '"+
                         major+"', '"+
                         latitude+"', '"+
-                        longitude+"', '"+
-                        locUpdateTime+"', '"+
+                        longitude+"', NOW(), '"+
                         currentGameID+"', '"+
                         isAlive+
                         "') RETURNING playerID;"
@@ -296,8 +295,8 @@ public class PlayerProfile {
                         "', major ='"+ major +
                         "', latitude ='"+ latitude +
                         "', longitude ='"+ longitude +
-                        "', locUpdateTime ='"+ locUpdateTime +
-                        "', gameID ='"+ currentGameID +
+                        "', locUpdateTime = NOW()" +
+                        ", gameID ='"+ currentGameID +
                         "', alive ='"+ isAlive +
                         "' WHERE player.playerID = "+ Integer.toString(this.ID) + " RETURNING playerID;");
             case "delete":

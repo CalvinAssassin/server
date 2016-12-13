@@ -38,4 +38,5 @@ insert into TargetMatches VALUES(1, 1, 10, 11, '2016-12-10', '2016-12-11');
 -- select * from player;
 -- select * from TargetMatches;
 
-SELECT matchID, gameID, playerID, targetID, targetStartTime, targetTimeoutTime FROM TargetMatches WHERE TargetMatches.playerID = 10 AND TargetMatches.gameID = 1 LIMIT 1;
+--SELECT matchID, gameID, playerID, targetID, targetStartTime, targetTimeoutTime FROM TargetMatches WHERE TargetMatches.playerID = 10 AND TargetMatches.gameID = 1 LIMIT 1;
+SELECT DATEDIFF(day, targetStartTime, targetTimeoutTime) as DIFF FROM TargetMatches WHERE TargetMatches.playerID = 10 AND TargetMatches.gameID = 1
