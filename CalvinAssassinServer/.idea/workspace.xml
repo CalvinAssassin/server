@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f552c0c0-9d8b-45cc-bdd5-a5a953bb89cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DBSchema.sql" afterPath="$PROJECT_DIR$/../DBSchema.sql" />
-    </list>
+    <list default="true" id="f552c0c0-9d8b-45cc-bdd5-a5a953bb89cd" name="Default" comment="" />
     <ignored path="Lab09.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,19 +31,21 @@
       <file leaf-file-name="CalvinAssassin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="597">
+              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding>
                 <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-                <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+                <element signature="e#6373#6382#0" expanded="true" />
+                <element signature="e#7517#7523#0" expanded="true" />
                 <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+                <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
               </folding>
             </state>
           </provider>
@@ -54,8 +54,8 @@
       <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="306" column="43" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
+            <state relative-caret-position="553">
+              <caret line="266" column="39" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="39" />
               <folding>
                 <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
@@ -65,6 +65,7 @@
                 <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+                <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,18 +74,22 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="239" column="56" selection-start-line="239" selection-start-column="56" selection-end-line="239" selection-end-column="56" />
+            <state relative-caret-position="675">
+              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#717#718#0" expanded="false" />
+                <element signature="e#755#756#0" expanded="false" />
+                <element signature="e#922#923#0" expanded="false" />
+                <element signature="e#977#978#0" expanded="false" />
                 <element signature="method#Game#2;class#Game#0" expanded="false" />
                 <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-                <element signature="method#getPlayers#0;class#Game#0" expanded="false" />
                 <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-                <element signature="e#7955#7956#0" expanded="true" />
-                <element signature="e#8001#8002#0" expanded="true" />
+                <element signature="e#7957#7958#0" expanded="false" />
+                <element signature="e#8003#8004#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -115,10 +120,10 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/MonopolyResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CreateGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerTargetInformation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java" />
       </list>
     </option>
   </component>
@@ -318,9 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,6 +369,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -976,12 +981,15 @@
       <workItem from="1481218308705" duration="2345000" />
       <workItem from="1481243787061" duration="5637000" />
       <workItem from="1481389918881" duration="6395000" />
-      <workItem from="1481603762933" duration="513000" />
+      <workItem from="1481603762933" duration="792000" />
+      <workItem from="1481605138065" duration="332000" />
+      <workItem from="1481657652838" duration="1496000" />
+      <workItem from="1481688952845" duration="2183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88715000" />
+    <option name="totallyTimeSpent" value="93005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -989,15 +997,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32625994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24111015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24111015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1046,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1057,11 +1065,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1079,6 +1089,7 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1088,15 +1099,19 @@
         <state relative-caret-position="1071">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-            <element signature="method#getPlayers#0;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7955#7956#0" expanded="true" />
-            <element signature="e#8001#8002#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="false" />
+            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,11 +1126,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1133,6 +1150,7 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1142,15 +1160,19 @@
         <state relative-caret-position="1071">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-            <element signature="method#getPlayers#0;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7955#7956#0" expanded="true" />
-            <element signature="e#8001#8002#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="false" />
+            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1165,11 +1187,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1187,6 +1211,7 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1196,15 +1221,19 @@
         <state relative-caret-position="810">
           <caret line="54" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-            <element signature="method#getPlayers#0;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7955#7956#0" expanded="true" />
-            <element signature="e#8001#8002#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="false" />
+            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1219,11 +1248,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1241,6 +1272,7 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
+            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1257,11 +1289,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1278,11 +1312,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1299,11 +1335,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1320,11 +1358,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1341,11 +1381,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1362,11 +1404,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1383,11 +1427,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1402,11 +1448,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1421,31 +1469,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1461,11 +1491,35 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Player.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1481,11 +1535,13 @@
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>
@@ -1504,10 +1560,32 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerTargetInformation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="method#Game#2;class#Game#0" expanded="false" />
+            <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
+            <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
+            <element signature="e#7957#7958#0" expanded="false" />
+            <element signature="e#8003#8004#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="306" column="43" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
+        <state relative-caret-position="553">
+          <caret line="266" column="39" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="39" />
           <folding>
             <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
             <element signature="method#PlayerProfile#2;class#PlayerProfile#0" expanded="false" />
@@ -1517,43 +1595,28 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="239" column="56" selection-start-line="239" selection-start-column="56" selection-end-line="239" selection-end-column="56" />
-          <folding>
-            <element signature="method#Game#2;class#Game#0" expanded="false" />
-            <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-            <element signature="method#getPlayers#0;class#Game#0" expanded="false" />
-            <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7955#7956#0" expanded="true" />
-            <element signature="e#8001#8002#0" expanded="true" />
+            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state relative-caret-position="597">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="method#getGame#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#6373#6382#0" expanded="true" />
+            <element signature="e#7517#7523#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
+            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
           </folding>
         </state>
       </provider>

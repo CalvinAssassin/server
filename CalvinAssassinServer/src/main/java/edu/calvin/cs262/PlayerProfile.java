@@ -17,8 +17,8 @@ public class PlayerProfile {
     public String lastName;
     public String residence;
     public String major;
-    public Float latitude;
-    public Float longitude;
+    public Double latitude;
+    public Double longitude;
     public String locUpdateTime;
     public Integer currentGameID;
     public Boolean isAlive;
@@ -27,18 +27,18 @@ public class PlayerProfile {
 
     // Default constructor
     public PlayerProfile() {
-        this("", "", "", "", 0.0f, 0.0f, "", null, false);
+        this("", "", "", "", 0.0, 0.0, "", 0, false);
     }
 
     // Parametrized constructor without ID number (eg. for creating a player in the server)
-    public PlayerProfile(String firstName, String lastName, String residence, String major, Float latitude,
-                         Float longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
+    public PlayerProfile(String firstName, String lastName, String residence, String major, Double latitude,
+                         Double longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
         this(null, firstName, lastName, residence, major, latitude, longitude, locUpdateTime, currentGameID, isAlive);
     }
 
     // Full value constructor
-    public PlayerProfile(Integer ID, String firstName, String lastName, String residence, String major, Float latitude,
-                         Float longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
+    public PlayerProfile(Integer ID, String firstName, String lastName, String residence, String major, Double latitude,
+                         Double longitude, String locUpdateTime, Integer currentGameID, Boolean isAlive) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -82,8 +82,8 @@ public class PlayerProfile {
             lastName        = rs.getString(3);
             residence       = rs.getString(4);
             major           = rs.getString(5);
-            latitude        = rs.getFloat(6);
-            longitude       = rs.getFloat(7);
+            latitude        = rs.getDouble(6);
+            longitude       = rs.getDouble(7);
             locUpdateTime   = rs.getString(8);
             currentGameID   = rs.getInt(9);
             isAlive         = rs.getBoolean(10);
@@ -153,24 +153,24 @@ public class PlayerProfile {
 
 
         // Try connecting and inserting data
-        try {
+//        try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
             statement = connection.createStatement();
             rs = statement.executeQuery(this.generateQueryString("update"));
-        }
-        catch (SQLException e) {
-            throw (e);
-        }
-        catch (ClassNotFoundException e) {
-            throw (e);
-        }
-        finally {
-            // Close all residual connection stuff
-            rs.close();
-            statement.close();
-            connection.close();
-        }
+        //}
+//        catch (SQLException e) {
+//            throw (e);
+//        }
+//        catch (ClassNotFoundException e) {
+//            throw (e);
+//        }
+//        finally {
+//            // Close all residual connection stuff
+//            rs.close();
+//            statement.close();
+//            connection.close();
+//        }
     }
 
     // This method deletes the player from the database
