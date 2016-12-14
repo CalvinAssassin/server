@@ -92,7 +92,7 @@ public class CalvinAssassin {
     // POST /profile/{id}/target/assassinate
     // Queries the database for information about the target of the given person, and returns it via JSON
     // @author: cdh24
-    @GET
+    @POST
     @Path("/profile/{id}/target/assassinate")
     @Produces("application/json")
     public String assassinatePlayer(@PathParam("id") int id) {
