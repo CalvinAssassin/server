@@ -89,6 +89,47 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to get target information for player.\"}";
     }
 
+    // POST /profile/{id}/target/assassinate
+    // Queries the database for information about the target of the given person, and returns it via JSON
+    // @author: cdh24
+    @GET
+    @Path("/profile/{id}/target/assassinate")
+    @Produces("application/json")
+    public String assassinatePlayer(@PathParam("id") int id) {
+
+        // Create connection to the database
+        Connection connection = null;
+        Statement statement = null;
+
+
+        // Try connecting and retrieving data
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
+            statement = connection.createStatement();
+            statement.executeUpdate(
+                    "DO $$ DECLARE curPlayerID integer := " + id + "; curGameID integer; oldTargetID integer; " +
+                    "newTargetID integer; BEGIN SELECT gameID FROM Player INTO curGameID WHERE playerID = curPlayerID; " +
+                    "SELECT targetID FROM TargetMatches INTO oldTargetID WHERE playerID = curPlayerID AND gameID = curGameID; " +
+                    "SELECT targetID FROM TargetMatches INTO newTargetID WHERE playerID = oldTargetID AND gameID = curGameID; " +
+                    "UPDATE TargetMatches SET targetID = newTargetID WHERE playerID = curPlayerID AND gameID = curGameID; " +
+                    "UPDATE Player SET alive = false WHERE playerID = oldTargetID; DELETE FROM TargetMatches WHERE " +
+                    "playerID = oldTargetID AND gameID = curGameID; END $$"
+            );
+
+            // Close all residual connection stuff
+            statement.close();
+            connection.close();
+
+            return getPlayersTarget(id);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "{\"err\":\"Unable to assassinate player.\"}";
+        }
+
+    }
+
 //    // GET /profile/{id}/picture
 //    // Queries the DB for the user's picture, then returns it as an image
 //    // @author: cdh24
