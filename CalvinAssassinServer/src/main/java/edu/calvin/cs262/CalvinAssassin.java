@@ -3,6 +3,8 @@ package edu.calvin.cs262;
 import com.google.gson.Gson;
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.net.httpserver.HttpServer;
+
+import javax.imageio.ImageIO;
 import javax.ws.rs.*;
 //import javax.ws.rs.core.Context;
 //import javax.ws.rs.core.UriInfo;
@@ -10,6 +12,8 @@ import javax.ws.rs.*;
 //import javax.xml.bind.annotation.XmlRootElement;
 //import java.sql.*;
 //import java.util.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -84,6 +88,71 @@ public class CalvinAssassin {
         }
         return "{\"err\":\"Unable to get target information for player.\"}";
     }
+
+//    // GET /profile/{id}/picture
+//    // Queries the DB for the user's picture, then returns it as an image
+//    // @author: cdh24
+//    @GET
+//    @Path("/profile/{id}/picture")
+//    @Produces("image/png")
+//    public byte getUserPicture(@PathParam("id") int id) {
+//
+//        // Create connection to the database
+//        Connection connection = null;
+//        Statement statement = null;
+//        ResultSet rs = null;
+//
+//
+//        // Try connecting and retrieving data
+//        try {
+//            Class.forName("org.postgresql.Driver");
+//            connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
+//            statement = connection.createStatement();
+//            rs = statement.executeQuery("SELECT picture FROM Player WHERE playerID = " + id + ";");
+//
+//            rs.next();
+//
+//            BufferedImage image = new BufferedImage().
+//
+//            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//            ImageIO.write(image, "png", baos);
+//            byte[] imageData = baos.toByteArray();
+//
+//            // Close all residual connection stuff
+//            rs.close();
+//            statement.close();
+//            connection.close();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return "{\"err\":\"Unable to query database for picture of user.\"}";
+//        }
+//
+//
+//        try {
+//
+//            // Create an array of games to return
+//            List<Game> gameList = new ArrayList<Game>();
+//
+//            for (Integer ID: gameIDs) {
+//                // Create a new game object
+//                Game game = new Game();
+//                game.loadFromDataBase(ID);
+//                game.getPlayers();
+//                gameList.add(game);
+//            }
+//
+//            return new Gson().toJson(gameList);
+//
+////            return game.getJSON();
+//
+//        }
+//        catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        return "{\"err\":\"Unable to get the list of games from the database\"}";
+//    }
 
     // POST /profile
     // Adds a profile to the database with the information supplied.
@@ -260,6 +329,77 @@ public class CalvinAssassin {
 
 //            return game.getJSON();
             
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return "{\"err\":\"Unable to get the list of games from the database\"}";
+
+
+    }
+
+    // GET /games/future
+    // Returns information about all the games in the DB
+    // @author: cdh24
+    @GET
+    @Path("/games/future")
+    @Produces("application/json")
+    public String getFutureGames() {
+
+        // Create a list to hold the IDs of all the games in the DB
+        List<Integer> gameIDs = new ArrayList<Integer>();
+
+
+        // Create connection to the database
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet rs = null;
+
+
+        // Try connecting and retrieving data
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
+            statement = connection.createStatement();
+            rs = statement.executeQuery("SELECT * FROM GAME WHERE startdate > NOW();");
+
+
+            // Add the game ids into the list
+            while(rs.next()) {
+                // Add the ID for each of the games into the list
+                gameIDs.add(rs.getInt(1));
+            }
+
+
+            // Close all residual connection stuff
+            rs.close();
+            statement.close();
+            connection.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "{\"err\":\"Unable to query database for IDs of games.\"}";
+        }
+
+
+        try {
+
+            // Create an array of games to return
+            List<Game> gameList = new ArrayList<Game>();
+
+            for (Integer ID: gameIDs) {
+                // Create a new game object
+                Game game = new Game();
+                game.loadFromDataBase(ID);
+                game.getPlayers();
+                gameList.add(game);
+            }
+
+            return new Gson().toJson(gameList);
+
+//            return game.getJSON();
+
         }
         catch (Exception e) {
             e.printStackTrace();

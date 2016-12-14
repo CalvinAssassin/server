@@ -31,21 +31,27 @@
       <file leaf-file-name="CalvinAssassin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+            <state relative-caret-position="553">
+              <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
               <folding>
                 <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+                <element signature="e#2751#2785#0" expanded="false" />
                 <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-                <element signature="e#6373#6382#0" expanded="true" />
-                <element signature="e#7517#7523#0" expanded="true" />
+                <element signature="e#8599#8608#0" expanded="true" />
+                <element signature="e#9743#9749#0" expanded="true" />
+                <element signature="e#10606#10615#0" expanded="true" />
+                <element signature="e#11769#11775#0" expanded="true" />
                 <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
                 <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-                <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+                <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+                <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+                <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+                <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
               </folding>
             </state>
           </provider>
@@ -54,7 +60,7 @@
       <file leaf-file-name="PlayerProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
+            <state relative-caret-position="448">
               <caret line="266" column="39" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="39" />
               <folding>
                 <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
@@ -65,7 +71,6 @@
                 <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
                 <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-                <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,22 +79,15 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+            <state relative-caret-position="1635">
+              <caret line="254" column="35" selection-start-line="254" selection-start-column="35" selection-end-line="254" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#717#718#0" expanded="false" />
-                <element signature="e#755#756#0" expanded="false" />
-                <element signature="e#922#923#0" expanded="false" />
-                <element signature="e#977#978#0" expanded="false" />
                 <element signature="method#Game#2;class#Game#0" expanded="false" />
                 <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
                 <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
                 <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-                <element signature="e#7957#7958#0" expanded="false" />
-                <element signature="e#8003#8004#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -984,12 +982,12 @@
       <workItem from="1481603762933" duration="792000" />
       <workItem from="1481605138065" duration="332000" />
       <workItem from="1481657652838" duration="1496000" />
-      <workItem from="1481688952845" duration="2183000" />
+      <workItem from="1481688952845" duration="3940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93005000" />
+    <option name="totallyTimeSpent" value="94762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1062,16 +1060,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1089,7 +1093,6 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,19 +1102,12 @@
         <state relative-caret-position="1071">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7957#7958#0" expanded="false" />
-            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1123,16 +1119,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1150,7 +1152,6 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1160,19 +1161,12 @@
         <state relative-caret-position="1071">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7957#7958#0" expanded="false" />
-            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1184,16 +1178,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1211,7 +1211,6 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1221,19 +1220,12 @@
         <state relative-caret-position="810">
           <caret line="54" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#977#978#0" expanded="false" />
             <element signature="method#Game#2;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
             <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7957#7958#0" expanded="false" />
-            <element signature="e#8003#8004#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1245,16 +1237,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1272,7 +1270,6 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1286,16 +1283,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1309,16 +1312,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1332,16 +1341,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1355,16 +1370,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1378,16 +1399,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1401,16 +1428,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1424,16 +1457,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1445,16 +1484,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1466,16 +1511,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1488,16 +1539,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1510,16 +1567,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1532,16 +1595,22 @@
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
@@ -1560,31 +1629,9 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerTargetInformation.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#977#978#0" expanded="false" />
-            <element signature="method#Game#2;class#Game#0" expanded="false" />
-            <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
-            <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
-            <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
-            <element signature="e#7957#7958#0" expanded="false" />
-            <element signature="e#8003#8004#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/PlayerProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="448">
           <caret line="266" column="39" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="39" />
           <folding>
             <element signature="method#PlayerProfile#1;class#PlayerProfile#0" expanded="false" />
@@ -1595,28 +1642,48 @@
             <element signature="method#saveToDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#deleteFromDataBase#0;class#PlayerProfile#0" expanded="false" />
             <element signature="method#getTargetInformationFromDatabase#0;class#PlayerProfile#0" expanded="false" />
-            <element signature="method#generateQueryString#0;class#PlayerProfile#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="254" column="35" selection-start-line="254" selection-start-column="35" selection-end-line="254" selection-end-column="35" />
+          <folding>
+            <element signature="method#Game#2;class#Game#0" expanded="false" />
+            <element signature="method#loadFromDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#loadFromDataBase#1;class#Game#0" expanded="false" />
+            <element signature="method#insertIntoDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#saveToDataBase#0;class#Game#0" expanded="false" />
+            <element signature="method#deleteFromDataBase#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/calvin/cs262/CalvinAssassin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        <state relative-caret-position="553">
+          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
           <folding>
             <element signature="method#getProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#getPlayersTarget#0;class#CalvinAssassin#0" expanded="false" />
+            <element signature="e#2751#2785#0" expanded="false" />
             <element signature="method#createProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateProfile#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteProfile#0;class#CalvinAssassin#0" expanded="false" />
-            <element signature="e#6373#6382#0" expanded="true" />
-            <element signature="e#7517#7523#0" expanded="true" />
+            <element signature="e#8599#8608#0" expanded="true" />
+            <element signature="e#9743#9749#0" expanded="true" />
+            <element signature="e#10606#10615#0" expanded="true" />
+            <element signature="e#11769#11775#0" expanded="true" />
             <element signature="method#createGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#updateGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#deleteGame#0;class#CalvinAssassin#0" expanded="false" />
             <element signature="method#main#0;class#CalvinAssassin#0" expanded="false" />
-            <marker date="1481698080000" expanded="true" signature="6878:6901" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="3540:3583" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="3540:3584" ph="SELECT pictu... Player" />
+            <marker date="1481722735000" expanded="true" signature="9104:9127" ph="SELECT gameI... GAME" />
+            <marker date="1481722735000" expanded="true" signature="11111:11153" ph="SELECT * FRO... GAME" />
           </folding>
         </state>
       </provider>
