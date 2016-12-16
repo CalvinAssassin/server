@@ -21,17 +21,33 @@ public class Game {
     public ArrayList<PlayerProfile> players = new ArrayList<PlayerProfile>();
 
 
-    // Default constructor
+    /**
+     * This is the default constructor for the object
+     * @author: Christiaan Hazlett
+     */
     public Game() {
         this(null, null, null);
     }
 
-    // Parametrized constructor without ID number (eg. for creating a game object in the server)
+    /**
+     * This is the paramatarized constructor for the game, without the ID value (eg. for inserting a game)
+     * @param gameName, the name of the game
+     * @param inPlay, whether the game is in play
+     * @param startDate, the starting date and time of the game
+     * @author: Christiaan Hazlett
+     */
     public Game(String gameName, Boolean inPlay, String startDate) {
         this(null, gameName, inPlay, startDate);
     }
 
-    // Full value constructor
+    /**
+     * This is the paramatarized constructor for the game
+     * @param ID,
+     * @param gameName, the name of the game
+     * @param inPlay, whether the game is in play
+     * @param startDate, the starting date and time of the game
+     * @author: Christiaan Hazlett
+     */
     public Game(Integer ID, String gameName, Boolean inPlay, String startDate) {
         this.ID = ID;
         this.gameName = gameName;
@@ -39,7 +55,11 @@ public class Game {
         this.startDate = startDate;
     }
 
-    // This method is for convenience--it sets the ID, and the loads data from the DB
+    /**
+     * This method sets the ID of the game, and then loads the game's info from the DB
+     * @param gameID, the ID number of the game
+     * @author: Christiaan Hazlett
+     */
     public void loadFromDataBase(int gameID) throws Exception {
         // Set the game ID of the class to gameID parameter
         this.ID = gameID;
@@ -48,7 +68,10 @@ public class Game {
         this.loadFromDataBase();
     }
 
-    // This method goes to the DB and populates the class with data from the DB, based on the gameID
+    /**
+     * Retrieve informationa about the game from the DB
+     * @author: Christiaan Hazlett
+     */
     public void loadFromDataBase() throws Exception {
         // Create connection to the database
         Connection connection = null;
@@ -84,8 +107,10 @@ public class Game {
         }
     }
 
-    // This method retrieves the data for and creates the objects of the players in the game, then puts them in the
-    // players array
+    /**
+     * This method loads all the player in the game, and stores them in this class
+     * @author: Christiaan Hazlett
+     */
     public void getPlayers() throws Exception {
         // Create connection to the database
         Connection connection = null;
@@ -130,7 +155,11 @@ public class Game {
         }
     }
 
-    // This method creates a record for the object in the database and returns the id of the created record
+    /**
+     * This method inserts the game into the database, and returns the game's ID number
+     * @return int, the ID number of the player
+     * @author: Christiaan Hazlett
+     */
     public int insertIntoDataBase() throws Exception {
         // Create connection to the database
         Connection connection = null;
@@ -166,7 +195,10 @@ public class Game {
         }
     }
 
-    // This method saves the data in the object to the database
+    /**
+     * This method updates the DB with info from this class
+     * @author: Christiaan Hazlett
+     */
     public void saveToDataBase() throws Exception {
 
 //        // Make sure the update request has an ID number
@@ -201,7 +233,10 @@ public class Game {
         }
     }
 
-    // This method deletes the game from the database
+    /**
+     * This method deletes the game from the database
+     * @author: Christiaan Hazlett
+     */
     public void deleteFromDataBase() throws Exception {
 
         // Create connection to the database
@@ -231,12 +266,21 @@ public class Game {
         }
     }
 
-    // Output a JSON-formatted representation of this class
+    /**
+     * This method returns a JSON representation of this class
+     * @return string, a JSON string of the class
+     * @author: Christiaan Hazlett
+     */
     public String getJSON() {
         return new Gson().toJson(this);
     }
 
-    // Generate a query string for this class
+    /**
+     * This method returns the correct SQL query string for each operation in the class
+     * @param queryType, the type of query to be done
+     * @return an SQL query string
+     * @author: Christiaan Hazlett
+     */
     public String generateQueryString(String queryType) {
 
         switch (queryType) {

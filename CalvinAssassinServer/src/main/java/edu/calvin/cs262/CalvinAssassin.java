@@ -4,29 +4,20 @@ import com.google.gson.Gson;
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.net.httpserver.HttpServer;
 
-import javax.imageio.ImageIO;
 import javax.ws.rs.*;
-//import javax.ws.rs.core.Context;
-//import javax.ws.rs.core.UriInfo;
-//import javax.xml.bind.annotation.XmlElement;
-//import javax.xml.bind.annotation.XmlRootElement;
-//import java.sql.*;
-//import java.util.*;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This module implements the server for the Calvin-Assassin game.
- * The server requires Java 1.7 (not 1.8).
+ * <h1>This module implements the server for the Calvin Assassin App</h1>
  *
+ * Unfortunately, this server requires JDK 1.7
  *
- * @author cdh24, The B Team
- * @version v -9000.1
-
+ * @author Christiaan Hazlett
+ * @version v 1.0
+ *
  */
 @Path("/api")
 public class CalvinAssassin {
@@ -46,11 +37,14 @@ public class CalvinAssassin {
     // | |   | | | (_) | | | | |  __/  ____) | |_| |_| | | | |
     // |_|   |_|  \___/|_| |_|_|\___| |_____/ \__|\__,_|_| |_|
 
-
-    // GET /profile/{id}
-    // Queries the database for information about the specified profile and
-    // returns it as JSON.
-    // @author: cdh24
+    /**
+     * GET /profile/{id}
+     * Queries the database for information about the specified profile and
+     * returns it as JSON.
+     * @param id, the ID number of the player
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @GET
     @Path("/profile/{id}")
     @Produces("application/json")
@@ -60,6 +54,7 @@ public class CalvinAssassin {
         PlayerProfile player = new PlayerProfile();
 
         try {
+            // Load the player from the DB and return JSON to browser
             player.loadFromDataBase(id);
             return player.getJSON();
         } catch (Exception e) {
@@ -68,9 +63,14 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to get profile.\"}";
     }
 
-    // GET /profile/{id}/target
-    // Queries the database for information about the target of the given person, and returns it via JSON
-    // @author: cdh24
+
+    /**
+     * GET /profile/{id}/target
+     * Queries the DB for target information for the user specified by the ID number in the route
+     * @param id, the ID number of the player
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @GET
     @Path("/profile/{id}/target")
     @Produces("application/json")
@@ -80,6 +80,7 @@ public class CalvinAssassin {
         PlayerProfile player = new PlayerProfile();
 
         try {
+            // Load the target info from DB and return JSON to browser
             player.loadFromDataBase(id);
             player.getTargetInformationFromDatabase();
             return player.getTargetJSON();
@@ -89,9 +90,14 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to get target information for player.\"}";
     }
 
-    // POST /profile/{id}/target/assassinate
-    // Queries the database for information about the target of the given person, and returns it via JSON
-    // @author: cdh24
+
+    /**
+     * POST /profile/{id}/target/assassinate
+     * Marks the target as assassinated, and assigns a new target to the user
+     * @param id, the ID number of the player
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @POST
     @Path("/profile/{id}/target/assassinate")
     @Produces("application/json")
@@ -102,7 +108,8 @@ public class CalvinAssassin {
         Statement statement = null;
 
 
-        // Try connecting and retrieving data
+        // Try connecting and updating data
+        // This query takes the target's target, and makes it the player's target.  Then is assassinated the target.
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
@@ -130,74 +137,13 @@ public class CalvinAssassin {
 
     }
 
-//    // GET /profile/{id}/picture
-//    // Queries the DB for the user's picture, then returns it as an image
-//    // @author: cdh24
-//    @GET
-//    @Path("/profile/{id}/picture")
-//    @Produces("image/png")
-//    public byte getUserPicture(@PathParam("id") int id) {
-//
-//        // Create connection to the database
-//        Connection connection = null;
-//        Statement statement = null;
-//        ResultSet rs = null;
-//
-//
-//        // Try connecting and retrieving data
-//        try {
-//            Class.forName("org.postgresql.Driver");
-//            connection = DriverManager.getConnection(CalvinAssassin.DB_URI, CalvinAssassin.DB_LOGIN_ID, CalvinAssassin.DB_PASSWORD);
-//            statement = connection.createStatement();
-//            rs = statement.executeQuery("SELECT picture FROM Player WHERE playerID = " + id + ";");
-//
-//            rs.next();
-//
-//            BufferedImage image = new BufferedImage().
-//
-//            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//            ImageIO.write(image, "png", baos);
-//            byte[] imageData = baos.toByteArray();
-//
-//            // Close all residual connection stuff
-//            rs.close();
-//            statement.close();
-//            connection.close();
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            return "{\"err\":\"Unable to query database for picture of user.\"}";
-//        }
-//
-//
-//        try {
-//
-//            // Create an array of games to return
-//            List<Game> gameList = new ArrayList<Game>();
-//
-//            for (Integer ID: gameIDs) {
-//                // Create a new game object
-//                Game game = new Game();
-//                game.loadFromDataBase(ID);
-//                game.getPlayers();
-//                gameList.add(game);
-//            }
-//
-//            return new Gson().toJson(gameList);
-//
-////            return game.getJSON();
-//
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//
-//        return "{\"err\":\"Unable to get the list of games from the database\"}";
-//    }
 
-    // POST /profile
-    // Adds a profile to the database with the information supplied.
-    // @author: cdh24
+    /**
+     * POST /profile/
+     * Creates a new profile and saves it to the database
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @POST
     @Consumes("application/json")
     @Path("/profile")
@@ -205,9 +151,19 @@ public class CalvinAssassin {
     public String createProfile(String data) throws Exception {
 
         try {
+
+            System.out.println(data);
+
             // Create new object from json string
             Gson gson = new Gson();
             PlayerProfile player = gson.fromJson(data, PlayerProfile.class);
+
+            // Set some default values to work around app bug
+            player.latitude = 0.0;
+            player.longitude = 0.0;
+            player.currentGameID = 1;
+            player.isAlive = true;
+
 
             // Insert into DB and get new ID number
             player.insertIntoDataBase();
@@ -221,9 +177,14 @@ public class CalvinAssassin {
         //return "{\"err\":\"Unable to create profile.\"}";
     }
 
-    // PUT /profile/{id}
-    // Updates a profile in the database with the information supplied.
-    // @author: cdh24
+    /**
+     * PUT /profile/{id}
+     * Load the current information about a player from the DB, and then updates
+     * and saves the player back to the database
+     * @param id, the ID number of the player
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @PUT
     @Consumes("application/json")
     @Path("/profile/{id}")
@@ -249,9 +210,14 @@ public class CalvinAssassin {
         return "{\"err\":\"Unable to update profile.\"}";
     }
 
-    // DELETE /profile/{id}
-    // Deletes a profile from the database
-    // @author: cdh24
+
+    /**
+     * DELETE /profile/{id}
+     * Deletes a player from the database
+     * @param id, the ID number of the player
+     * @return a JSON string message indicating success or failure
+     * @author: Christiaan Hazlett
+     */
     @DELETE
     @Consumes("application/json")
     @Path("/profile/{id}")
@@ -286,10 +252,13 @@ public class CalvinAssassin {
 
 
 
-    // GET /game/{id}
-    // Queries the database for information about the specified game and
-    // returns it as JSON.
-    // @author: cdh24
+    /**
+     * GET /game/{id}
+     * Queries the database for information about a game
+     * @param id, the ID number of the player
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @GET
     @Path("/game/{id}")
     @Produces("application/json")
@@ -299,6 +268,7 @@ public class CalvinAssassin {
         Game game = new Game();
 
         try {
+            // Load the game from the DB and return the JSON to the browser
             game.loadFromDataBase(id);
             game.getPlayers();
             return game.getJSON();
@@ -309,9 +279,12 @@ public class CalvinAssassin {
     }
 
 
-    // GET /games
-    // Returns information about all the games in the DB
-    // @author: cdh24
+    /**
+     * GET /games
+     * Queries the database and returns a listing of all the games
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @GET
     @Path("/games")
     @Produces("application/json")
@@ -367,8 +340,6 @@ public class CalvinAssassin {
             }
 
             return new Gson().toJson(gameList);
-
-//            return game.getJSON();
             
         }
         catch (Exception e) {
@@ -380,9 +351,12 @@ public class CalvinAssassin {
 
     }
 
-    // GET /games/future
-    // Returns information about all the games in the DB
-    // @author: cdh24
+    /**
+     * GET /games
+     * Queries the database and returns a listing of all the games that will start in the future
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @GET
     @Path("/games/future")
     @Produces("application/json")
@@ -452,9 +426,13 @@ public class CalvinAssassin {
     }
 
 
-    // POST /game
-    // Adds a new game object to the database and sends the data back to the browser
-    // @author: cdh24
+    /**
+     * POST /game
+     * Creates a new game object, then adds it to the database
+     * @param data, the input data JSON string for the player game object
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @POST
     @Consumes("application/json")
     @Path("/game")
@@ -478,9 +456,14 @@ public class CalvinAssassin {
     }
 
 
-    // PUT /game/{id}
-    // Updates a game in the database with the information supplied.
-    // @author: cdh24
+    /**
+     * PUT /game/<id>
+     * Updates a game object in the database with the information supplied in JSON
+     * @param id, the ID of the game to update
+     * @param data, the JSON string of the new data to update with
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @PUT
     @Consumes("application/json")
     @Path("/game/{id}")
@@ -507,9 +490,13 @@ public class CalvinAssassin {
     }
 
 
-    // DELETE /game/{id}
-    // Deletes the game from the DB
-    // @author: cdh24
+    /**
+     * DELETE /game/<id>
+     * Deletes a specified game from the database
+     * @param id the ID of the game to delete
+     * @return a JSON string
+     * @author: Christiaan Hazlett
+     */
     @DELETE
     @Consumes("application/json")
     @Path("/game/{id}")
@@ -538,32 +525,8 @@ public class CalvinAssassin {
 
 
 
-//    // GET /game/{id}/players
-//    // Queries the database for the players associated with the game
-//    // @author: cdh24
-//    @GET
-//    @Path("/game/{id}/players")
-//    @Produces("application/json")
-//    public String getPlayersInGame(@PathParam("id") int id) {
-//
-//        // Create a new profile object
-//        Game game = new Game();
-//
-//        try {
-//            game.loadFromDataBase(id);
-//            game.getPlayers();
-//            return game.getJSON();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return "{\"err\":\"Unable to get game.\"}";
-//    }
-
-
-
-
     /**
-     * Run this main method to fire up the service.
+     * This is the main method which starts the REST service
      *
      * @param args command-line arguments (ignored)
      * @throws IOException
@@ -572,22 +535,13 @@ public class CalvinAssassin {
         HttpServer server = HttpServerFactory.create("http://localhost:8082/");
         server.start();
 
+        // Debug messages, links to server
         System.out.println("Server running...");
         System.out.println("Web clients should visit: http://localhost:8082/api");
         System.out.println("Android emulators should visit: http://LOCAL_IP_ADDRESS:8082/api");
 
-//        Game test = new Game();
-//        test.ID = 1;
-//        try {
-//            test.getPlayers();
-//            for (PlayerProfile e : test.players) {
-//                System.out.println(e.getJSON());
-//            }
-//        }
-//        catch (Exception e) {
-//            throw(e);
-//        }
 
+        // More debug messages
         System.out.println("Hit return to stop...");
         //noinspection ResultOfMethodCallIgnored
         System.in.read();
